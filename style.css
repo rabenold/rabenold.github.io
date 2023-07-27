@@ -57,11 +57,6 @@ body{
 }
 
 
-#third_term{
-    padding-top: .2em;
-
-
-}
 .carat {color: rgb(200, 224, 184);
     padding-left :1em; 
     font-size: .6em;
@@ -69,7 +64,7 @@ body{
 
 .cat_text{
     font-family: 'Share Tech Mono', serif;
-    font-size: .6em;
+    font-size: .8em;
     color: white; 
     text-shadow: 0 0 .1em white;
     display:flex; 
@@ -83,4 +78,6 @@ body{
 #second_term{
     display: none; 
 }
-
+#third_term{
+    padding-top: .2em;
+}
