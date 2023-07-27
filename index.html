@@ -9,39 +9,58 @@
     </head>
 
     <body onload=get_date() >
-      <div class = "terminal" >
+      <div class = "terminal" onclick=hide_once() >
         
-        <div id = "first_term" onclick=hide_once()>
+        <div id = "first_term">
 
           <div class = "line"> 
-            <div class = "entry">$</div>
+            <div class = "entry dollar" >$</div>
             <div class = "entry" style="color: rgb(255, 74, 219);  text-shadow:0 0 .1em rgb(255, 74, 219);">Ellie@Rabenold</div>
             <div class = "entry" style = "color: rgb(255, 255, 0);  text-shadow:0 0 .1em rgb(255, 255, 0);"> ~/Welcome/</div>
           </div>
 
           <div class = "line" >  
-            <div class = "entry">$</div>
+            <div class = "entry dollar">$</div>
             <div class = "entry" id = "intro_date"> </div>
 
           </div>
-          <div class = "line">
-            <div class = "entry">$</div>
-            <div class = "entry" >Press enter to continue </div>
-            <div class = "entry blink_me">|</div>
-
+          <div class = "line" id = "fix_this">
+            <div class = "entry dollar">$</div>
+            <div class = "entry" id = "press_enter">Click to proceed </div>
+            <div class = "entry blink_me" id = "bar_one">|</div>
           </div>
           
         </div>
         
-        <div id = "second_term" onclick=hide_once() style="display:none">
-          <div class = "line">
-            <div class = "entry">$ </div>
-            <div class = "entry ">cd ./Desktop/About</div>
+          <div id = "second_term"  style="display:block">
+            <div class = "line">
+              <div class = "entry dollar">$ </div>
+              <div class = "entry " id = "cd_desktop">cd ./Desktop/About</div>
+            </div>
+            <div class = "line"> 
+              <div class = "entry dollar" >$</div>
+              <div class = "entry" style="color: rgb(255, 74, 219);  text-shadow:0 0 .1em rgb(255, 74, 219);">Ellie@Rabenold</div>
+              <div class = "entry" style = "color: rgb(255, 255, 0);  text-shadow:0 0 .1em rgb(255, 255, 0);"> ~/Destkop/About/</div>
+            </div>
+            <div class= "line">
+              <div class = "entry dollar">$ </div>
+              <div class = "entry ">cat Bio.txt</div>
+            </div>
           </div>
-          <div class= "line">
-            <div class = "entry">$ </div>
-            <div class = "entry ">cat Bio.txt</div>
-          </div>
+
+          <div class = "terminal" id = "third_term">
+            <div class= "line">
+              <div class = "entry carat">> </div>
+              <div class = "entry cat_text  ">Hello!</div>
+            </div>
+            <div class= "line">
+              <div class = "entry carat">> </div>
+              <div class = "entry cat_text  ">My name is Ellie</div>
+            </div>
+            <div class= "line">
+              <div class = "entry carat">> </div>
+              <div class = "entry cat_text  ">I'm rising senior at MIT, studying EECS </div>
+            </div>
           </div>
         </div>
 

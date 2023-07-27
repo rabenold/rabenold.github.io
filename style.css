@@ -45,12 +45,36 @@ body{
     justify-content: left;
     padding-bottom: .25em; 
     overflow-x:hidden;
+    text-align: left;
 }
+
+.dollar {color: rgb(200, 224, 184);}
 
 .entry{
     justify-self: left;
     text-align: center;
     padding-left: .5em;
+}
+
+
+#third_term{
+    padding-top: .2em;
+
+
+}
+.carat {color: rgb(200, 224, 184);
+    padding-left :1em; 
+    font-size: .6em;
+}
+
+.cat_text{
+    font-family: 'Share Tech Mono', serif;
+    font-size: .6em;
+    color: white; 
+    text-shadow: 0 0 .1em white;
+    display:flex; 
+    overflow-wrap:normal;
+    text-align: left;
 }
 
 #first_term{
