@@ -7,11 +7,44 @@
       <link rel="stylesheet" type ="text/css" href="style.css">
       <script src="./myscript.js"></script>
     </head>
-    <body onload="get_date()">
-      <div class = "terminal" id = "HELLO" ></div> 
-      <div id = "block_container">
-      <div id ="bloc1"  class = "terminal">$ Press enter to continue</div> <div id="bloc2" class = "blink_me terminal" >|</div>
-      </div>
 
+    <body onload=get_date() >
+      <div class = "terminal" >
+        
+        <div id = "first_term" onclick=hide_once()>
+
+          <div class = "line"> 
+            <div class = "entry">$</div>
+            <div class = "entry" style="color: rgb(255, 74, 219);  text-shadow:0 0 .1em rgb(255, 74, 219);">Ellie@Rabenold</div>
+            <div class = "entry" style = "color: rgb(255, 255, 0);  text-shadow:0 0 .1em rgb(255, 255, 0);"> ~/Welcome/</div>
+          </div>
+
+          <div class = "line" >  
+            <div class = "entry">$</div>
+            <div class = "entry" id = "intro_date"> </div>
+
+          </div>
+          <div class = "line">
+            <div class = "entry">$</div>
+            <div class = "entry" >Press enter to continue </div>
+            <div class = "entry blink_me">|</div>
+
+          </div>
+          
+        </div>
+        
+        <div id = "second_term" onclick=hide_once() style="display:none">
+          <div class = "line">
+            <div class = "entry">$ </div>
+            <div class = "entry ">cd ./Desktop/About</div>
+          </div>
+          <div class= "line">
+            <div class = "entry">$ </div>
+            <div class = "entry ">cat Bio.txt</div>
+          </div>
+          </div>
+        </div>
+
+      </div>       
     </body>
   </html>
