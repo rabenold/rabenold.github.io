@@ -44,9 +44,11 @@ body{
     flex-direction: row;
     justify-content: left;
     padding-bottom: .25em; 
+    overflow-x:hidden;
 }
 
 .entry{
+    justify-self: left;
     text-align: center;
     padding-left: .5em;
 }
