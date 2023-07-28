@@ -4,8 +4,8 @@ body{
     background-color : black;
     font-family : 'Courier New', monospace;
     height : 100%; 
-    overflow : hidden; 
-
+    overflow-y : scroll; 
+    overflow-x: hidden;
 }
 
 .term_header{
@@ -27,10 +27,11 @@ body{
 
 .terminal{
     font-family: 'Share Tech Mono', serif;
-    font-size:1.5em;
+    font-size:2rem;
     color: #00ff00b5; 
-    text-shadow: 0 0 .1em #00FF00;
-    display:flex; 
+    text-shadow: 0 0 .1rem #00FF00;
+    display:flex;
+    overflow-x: wrap;
     flex-direction: column;
 }
 .text_block{
@@ -43,8 +44,8 @@ body{
     display: flex; 
     flex-direction: row;
     justify-content: left;
-    padding-bottom: .25em; 
-    overflow-x:hidden;
+    padding-bottom: .25rem; 
+    overflow-x:wrap;
     text-align: left;
 }
 
@@ -52,24 +53,29 @@ body{
 
 .entry{
     justify-self: left;
-    text-align: center;
-    padding-left: .5em;
+    text-align: left;
+    padding-left: .5rem;
 }
 
 
 .carat {color: rgb(200, 224, 184);
-    padding-left :1em; 
-    font-size: .6em;
+    padding-left : 1.5rem ; 
+    font-size: 1.5rem;
 }
 
 .cat_text{
     font-family: 'Share Tech Mono', serif;
-    font-size: .8em;
+    font-size: 1.5rem;
     color: white; 
-    text-shadow: 0 0 .1em white;
+    text-shadow: 0 0 .1rem white;
     display:flex; 
-    overflow-wrap:normal;
+    text-overflow: wrap;
     text-align: left;
+}
+.data_entry{
+    padding-left:1.5rem;
+    padding-bottom:.5rem;
+
 }
 
 #first_term{
