@@ -6,13 +6,19 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
       <link rel="stylesheet" type ="text/css" href="style.css">
       <script src="./myscript.js"></script>
+      <style>
+        .sequence-div {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: none;
+        }
+    </style>
     </head>
 
     <body onload=get_date() >
-      <div class = "terminal" onclick=hide_once() >
-        
+      <div class = "terminal" >
         <div id = "first_term">
-
           <div class = "line"> 
             <div class = "entry dollar" >$</div>
             <div class = "entry" style="color: rgb(255, 74, 219);  text-shadow:0 0 .1em rgb(255, 74, 219);">Ellie@Rabenold</div>
@@ -24,124 +30,13 @@
             <div class = "entry" id = "intro_date"> </div>
 
           </div>
-          <div class = "line" id = "fix_this">
-            <div class = "entry dollar">$</div>
-            <div class = "entry" id = "press_enter">Click to proceed </div>
-            <div class = "entry blink_me" id = "bar_one">|</div>
-          </div>
           
-        </div>
-        
-          <div id = "second_term"  style="display:block">
-            <div class = "line">
-              <div class = "entry dollar">$ </div>
-              <div class = "entry " id = "cd_desktop">cd ./Desktop/About</div>
-            </div>
-            <div class = "line"> 
-              <div class = "entry dollar" >$</div>
-              <div class = "entry" style="color: rgb(255, 74, 219);  text-shadow:0 0 .1em rgb(255, 74, 219);">Ellie@Rabenold</div>
-              <div class = "entry" style = "color: rgb(255, 255, 0);  text-shadow:0 0 .1em rgb(255, 255, 0);"> ~/Destkop/About/</div>
-            </div>
-            <div class= "line">
-              <div class = "entry dollar">$ </div>
-              <div class = "entry ">cat Bio.txt</div>
-            </div>
-          </div>
-
-          <div id = "third_term">
-            <div class= "line">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  ">Hello!</div>
-            </div>
-            <div class= "line">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  ">My name is Ellie</div>
-            </div>
-            <div class= "line">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  ">I'm rising senior at MIT, studying EECS </div>
-            </div>
-            <div class= "line">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  "> Previously, I've interned at: </div>
-            </div>
-            <div class= "line" style = "flex-direction : column; padding-left:1.5rem; font-size:1.25rem; color:white;">
-              <div class = "data_entry"> - Relativity Space, robotics engineering [S23]</div>
-              <div  class = "data_entry"> - SpaceX, test/electrical engineering [S22]</div>
-              <div  class = "data_entry"> - Cogo Labs, software engineering [F21]</div>
-              <div  class = "data_entry"> - Oracle, software engineering [S21]</div>
-            </div>
-            <div class= "line" style="padding-top:.5rem;">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  "> Research experience: </div>
-            </div>
-            <div class= "line" style = "flex-direction : column; padding-left:1.5rem; font-size:1.25rem; color:white;">
-              <div class = "data_entry"> - MIT Media Lab, Responsive Environments Group [SP22]</div>
-              <div  class = "data_entry"> - MIT RLE, Power Electronics [F23]</i></div>
-            </div>
-            <div class= "line" style="padding-top:.5rem;">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  "> Extracurriculars: </div>
-            </div>
-            <div class= "line" style = "flex-direction : column; padding-left:1.5rem; font-size:1.25rem; color:white;">
-              <div class = "data_entry"> - Varsity Lacrosse, Team Captain [F22-SP24]</div>
-              <div  class = "data_entry"> - MIT Divest, Co-President [SP22-SP23]</i></div>
-            </div>
-
-            <div class= "line">
-              <div class = "entry dollar">$ </div>
-              <div class = "entry ">clear</div>
-              <div class = "entry blink_me" id = "bar_one">|</div>
-            </div>
-            <div class= "line">
-              <div class = "entry dollar">$ </div>
-              <div class = "entry ">cat CourseWork.txt</div>
-            </div>
-
-            <div class= "line" style="padding-top:.5rem;">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  "> EE Stuff: </div>
-            </div>
-            <div class= "line" style = "flex-direction : column; padding-left:1.5rem; font-size:1.25rem; color:white;">
-              <div  class = "data_entry"> - Power Electronics Laboratory</i></div>
-              <div class = "data_entry"> - Classical Controls</div>
-              <div class = "data_entry"> - Circuits </div>
-            </div>
-
-            <div class= "line" style="padding-top:.5rem;">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  "> EECS Stuff: </div>
-            </div>
-            <div class= "line" style = "flex-direction : column; padding-left:1.5rem; font-size:1.25rem; color:white;">
-              <div class = "data_entry"> - Digital Systems [FPGA Dev] </div>
-              <div class = "data_entry"> - Secure Hardware Design </div>
-              <div class = "data_entry"> - Embedded Systems </div>
-              <div class = "data_entry"> - Intro Computer Arch. </div>
-            </div>
-            <div class= "line" style="padding-top:.5rem;">
-              <div class = "entry carat">> </div>
-              <div class = "entry cat_text  "> CS Stuff: </div>
-            </div>
-            <div class= "line" style = "flex-direction : column; padding-left:1.5rem; font-size:1.25rem; color:white;">
-              <div class = "data_entry"> - Machine Learning</div>
-              <div class = "data_entry"> - Artificial Intelligence </div>
-              <div class = "data_entry"> - Operating Systems [Upcoming] </div>
-            </div>
-            </div>
+          <div class = "line" >  
+            <div class = "entry dollar">$</div>
+            <div class = "entry" > Under Construction </div>
 
           </div>
-
-
-
-
-
-
-
-            </div>
-            </div>
           </div>
         </div>
-
-      </div>       
     </body>
   </html>

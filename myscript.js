@@ -20,15 +20,18 @@ function hide_second(){
     elm1.innerHTML = "cd ./Desktop/About"
     let elm2 = document.getElementById("bar_1");
     if(elm2.style.display === "none"){
-        elm2.style.display = "block";
+        elm2.style.display = "inline-block";
         }
 }
 
+let my_index = 0; 
 
-// function click(){
-    
-//     let elm1 = document.getElementById("press_enter");
-//     let elm2 = document.getElementById("bar_one");
-//     elm1.style.display = "none";
-//     elm2.style.display = "none";
-//     my_count++; 
+function showNext() {
+    const sequence_divs = document.querySelectorAll('.sequential_div');
+    console.log(sequence_divs)
+    if (my_index <sequence_divs.length){
+        sequence_divs[my_index].style.display = 'flex';
+        my_index++;
+    }
+}
+
